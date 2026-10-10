@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Dashboard</h1>
+  <p class="page-subtitle">Overview of all campus events and registrations</p>
+</div>
+
+<!-- ── Stat cards ─────────────────────────────────────────────────────────── -->
+<div class="stat-grid">
+  <div class="stat-card stat-blue">
+    <div class="stat-icon">📅</div>
+    <div class="stat-value">{{ total_events }}</div>
+    <div class="stat-label">Total Events</div>
+  </div>
+  <div class="stat-card stat-green">
+    <div class="stat-icon">👥</div>
+    <div class="stat-value">{{ total_registrations }}</div>
+    <div class="stat-label">Total Registrations</div>
+  </div>
+  <div class="stat-card stat-purple">
+    <div class="stat-icon">🪑</div>
+    <div class="stat-value">{{ total_available }}</div>
+    <div class="stat-label">Available Seats</div>
+  </div>
+</div>
+
+<!-- ── Quick actions ──────────────────────────────────────────────────────── -->
+<div class="quick-actions">
+  <a href="{{ url_for('add_event') }}"    class="btn btn-primary">+ Add Event</a>
+  <a href="{{ url_for('register') }}"     class="btn btn-secondary">Register Participant</a>
+  <a href="{{ url_for('registrations') }}" class="btn btn-secondary">View Registrations</a>
+  <a href="{{ url_for('attendance') }}"   class="btn btn-secondary">Attendance</a>
+  <a href="{{ url_for('summary') }}"      class="btn btn-secondary">Event Summary</a>
+</div>
+
+<!-- ── Events table ───────────────────────────────────────────────────────── -->
+<div class="card">
+  <div class="card-header">
+    <h2>All Events</h2>
+  </div>
+  {% if summary %}
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Event ID</th>
+          <th>Event Name</th>
+          <th>Capacity</th>
+          <th>Registered</th>
+          <th>Available Seats</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in summary %}
+        <tr>
+          <td><code>{{ item.event_id }}</code></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.capacity }}</td>
+          <td>{{ item.registered }}</td>
+          <td>{{ item.available_seats }}</td>
+          <td>
+            {% if item.available_seats == 0 %}
+              <span class="badge badge-red">Full</span>
+            {% elif item.available_seats <= (item.capacity * 0.2) | int %}
+              <span class="badge badge-orange">Almost Full</span>
+            {% else %}
+              <span class="badge badge-green">Open</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No events have been added yet.</p>
+    <a href="{{ url_for('add_event') }}" class="btn btn-primary">Add your first event</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

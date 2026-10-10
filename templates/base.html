@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Campus Event Registration{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="nav-icon">🎓</span> Campus Event Registration
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('dashboard') }}"    class="{{ 'active' if request.endpoint == 'dashboard'    else '' }}">Dashboard</a></li>
+      <li><a href="{{ url_for('add_event') }}"    class="{{ 'active' if request.endpoint == 'add_event'    else '' }}">Add Event</a></li>
+      <li><a href="{{ url_for('register') }}"     class="{{ 'active' if request.endpoint == 'register'     else '' }}">Register</a></li>
+      <li><a href="{{ url_for('registrations') }}" class="{{ 'active' if request.endpoint == 'registrations' else '' }}">Registrations</a></li>
+      <li><a href="{{ url_for('attendance') }}"   class="{{ 'active' if request.endpoint == 'attendance'   else '' }}">Attendance</a></li>
+      <li><a href="{{ url_for('summary') }}"      class="{{ 'active' if request.endpoint == 'summary'      else '' }}">Summary</a></li>
+      <li><a href="{{ url_for('logs') }}"         class="{{ 'active' if request.endpoint == 'logs'         else '' }}">Logs</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Flash messages ──────────────────────────────────────────────────── -->
+  <div class="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+          <span class="alert-icon">{{ '✓' if category == 'success' else '✗' }}</span>
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endwith %}
+  </div>
+
+  <!-- ── Page content ────────────────────────────────────────────────────── -->
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>Campus Event Registration &mdash; Secure Application Development Workshop &mdash; Exercise 1.1</p>
+  </footer>
+
+</body>
+</html>

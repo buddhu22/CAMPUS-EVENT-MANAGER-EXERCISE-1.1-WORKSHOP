@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Register Participant — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Register Participant</h1>
+  <p class="page-subtitle">Enrol a participant in a campus event</p>
+</div>
+
+<div class="form-card">
+  {% if events %}
+  <form method="POST" action="{{ url_for('register') }}" novalidate>
+
+    <div class="form-group">
+      <label for="event_id">Select Event <span class="required">*</span></label>
+      <select id="event_id" name="event_id" required>
+        <option value="">-- Choose an event --</option>
+        {% for eid, event in events.items() %}
+          <option value="{{ eid }}">{{ event.name }} ({{ eid }})</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="participant_id">Participant ID <span class="required">*</span></label>
+      <input type="text" id="participant_id" name="participant_id"
+             placeholder="e.g. P001"
+             maxlength="4"
+             required />
+      <small class="form-hint">Format: P followed by 3 digits — e.g. P001, P123.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Participant Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name"
+             placeholder="e.g. Alice Johnson"
+             maxlength="100"
+             required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address <span class="required">*</span></label>
+      <input type="email" id="email" name="email"
+             placeholder="e.g. alice@example.com"
+             maxlength="150"
+             required />
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Register Participant</button>
+      <a href="{{ url_for('dashboard') }}" class="btn btn-ghost">Cancel</a>
+    </div>
+
+  </form>
+  {% else %}
+  <div class="empty-state">
+    <p>No events exist yet. Please add an event first.</p>
+    <a href="{{ url_for('add_event') }}" class="btn btn-primary">Add Event</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

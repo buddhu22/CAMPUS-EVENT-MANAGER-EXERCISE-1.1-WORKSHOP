@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Attendance — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Attendance</h1>
+  <p class="page-subtitle">Full attendance record for all events</p>
+</div>
+
+<!-- Export button -->
+<div class="section-actions">
+  <form method="POST" action="{{ url_for('export_csv') }}">
+    <button type="submit" class="btn btn-secondary">
+      ⬇ Export Attendance CSV
+    </button>
+  </form>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h2>Attendance Records</h2>
+    <span class="badge badge-blue">{{ records | length }} records</span>
+  </div>
+
+  {% if records %}
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Event ID</th>
+          <th>Event Name</th>
+          <th>Participant ID</th>
+          <th>Participant Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rec in records %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td><code>{{ rec.event_id }}</code></td>
+          <td>{{ rec.event_name }}</td>
+          <td><code>{{ rec.participant_id }}</code></td>
+          <td>{{ rec.name }}</td>
+          <td>{{ rec.email }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No attendance records yet.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary">Register Participants</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Event Summary — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Event Summary</h1>
+  <p class="page-subtitle">Registration counts and seat availability per event</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h2>All Events Summary</h2>
+  </div>
+
+  {% if summary %}
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Event ID</th>
+          <th>Event Name</th>
+          <th>Capacity</th>
+          <th>Registered</th>
+          <th>Available Seats</th>
+          <th>Fill Rate</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in summary %}
+        {% set fill_pct = ((item.registered / item.capacity) * 100) | int %}
+        <tr>
+          <td><code>{{ item.event_id }}</code></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.capacity }}</td>
+          <td>{{ item.registered }}</td>
+          <td>{{ item.available_seats }}</td>
+          <td>
+            <div class="progress-bar-wrapper">
+              <div class="progress-bar" style="width: {{ fill_pct }}%;
+                background: {% if fill_pct == 100 %}#ef4444{% elif fill_pct >= 80 %}#f97316{% else %}#22c55e{% endif %};">
+              </div>
+            </div>
+            <small>{{ fill_pct }}%</small>
+          </td>
+          <td>
+            {% if item.available_seats == 0 %}
+              <span class="badge badge-red">Full</span>
+            {% elif fill_pct >= 80 %}
+              <span class="badge badge-orange">Almost Full</span>
+            {% else %}
+              <span class="badge badge-green">Open</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No events found.</p>
+    <a href="{{ url_for('add_event') }}" class="btn btn-primary">Add an Event</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

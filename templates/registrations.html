@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Registrations — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Registrations</h1>
+  <p class="page-subtitle">All participant registrations across events</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h2>Participant List</h2>
+    <a href="{{ url_for('register') }}" class="btn btn-primary btn-sm">+ Register New</a>
+  </div>
+
+  {% if registrations %}
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Event ID</th>
+          <th>Event Name</th>
+          <th>Participant ID</th>
+          <th>Participant Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for reg in registrations %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td><code>{{ reg.event_id }}</code></td>
+          <td>{{ reg.event_name }}</td>
+          <td><code>{{ reg.participant_id }}</code></td>
+          <td>{{ reg.name }}</td>
+          <td>{{ reg.email }}</td>
+          <td>
+            <!-- Confirmation before cancel (simple JS confirm) -->
+            <form method="POST" action="{{ url_for('cancel') }}"
+                  onsubmit="return confirm('Cancel registration for {{ reg.participant_id }} from {{ reg.event_id }}?');">
+              <input type="hidden" name="event_id"       value="{{ reg.event_id }}" />
+              <input type="hidden" name="participant_id" value="{{ reg.participant_id }}" />
+              <button type="submit" class="btn btn-danger btn-sm">Cancel</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No registrations found.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary">Register a Participant</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

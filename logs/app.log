@@ -1,0 +1,224 @@
+2026-10-06 21:50:38 - WARNING - Event creation failed: Non-numeric capacity 'abc'.
+2026-10-06 21:51:42 - WARNING - registrations.json not found. Initializing with empty data.
+2026-10-06 21:52:13 - INFO - Successful event creation: ID='E001', Name='Cybersecurity workshop', Capacity=80.
+2026-10-06 21:52:44 - WARNING - Registration failed: Invalid participant ID format 'abhay2005'.
+2026-10-06 21:52:53 - WARNING - Invalid menu choice entered: ''E001'.
+2026-10-06 21:53:17 - WARNING - Registration failed: Non-existent Event ID 'e001'.
+2026-10-07 00:14:27 - INFO - Data loaded successfully.
+2026-10-07 00:15:07 - INFO - Successful event creation: ID='ps001', Name='ai and machine learning workshop', Capacity=60.
+2026-10-07 00:16:05 - WARNING - Registration failed: Invalid participant ID format 'abhay2005'.
+2026-10-07 00:16:52 - WARNING - Cancellation failed: Registration not found for Participant 'ABHAY001' in Event 'E001'.
+2026-10-07 00:27:09 - INFO - Data loaded successfully.
+2026-10-07 00:27:09 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-07 00:27:09 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-07 00:28:14 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:14] "GET / HTTP/1.1" 200 -
+2026-10-07 00:28:14 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:14] "GET /static/style.css HTTP/1.1" 200 -
+2026-10-07 00:28:14 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-07 00:28:44 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:44] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 00:28:44 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:28:46 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:46] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 00:28:46 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:46] "GET /static/style.css HTTP/1.1" 200 -
+2026-10-07 00:28:46 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:46] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 00:28:46 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:28:47 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-07 00:28:47 - INFO - 127.0.0.1 - - [07/Oct/2026 00:28:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-07 00:29:11 - INFO - Event created: ID='e001', Name='ai and machine learning workshop', Capacity=25.
+2026-10-07 00:29:11 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:11] "[32mPOST /add-event HTTP/1.1[0m" 302 -
+2026-10-07 00:29:11 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:11] "GET / HTTP/1.1" 200 -
+2026-10-07 00:29:11 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:14 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:14] "GET /register HTTP/1.1" 200 -
+2026-10-07 00:29:14 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:23 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:23] "GET /registrations HTTP/1.1" 200 -
+2026-10-07 00:29:23 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:26 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:26] "GET /attendance HTTP/1.1" 200 -
+2026-10-07 00:29:26 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:28 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:28] "GET /summary HTTP/1.1" 200 -
+2026-10-07 00:29:28 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:32 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:32] "GET /logs HTTP/1.1" 200 -
+2026-10-07 00:29:33 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:48 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:48] "GET / HTTP/1.1" 200 -
+2026-10-07 00:29:48 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:55 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:55] "GET /register HTTP/1.1" 200 -
+2026-10-07 00:29:55 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:29:58 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:58] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 00:29:58 - INFO - 127.0.0.1 - - [07/Oct/2026 00:29:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:01 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:01] "GET /registrations HTTP/1.1" 200 -
+2026-10-07 00:30:01 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:03 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:03] "GET /attendance HTTP/1.1" 200 -
+2026-10-07 00:30:03 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:05 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:05] "GET /register HTTP/1.1" 200 -
+2026-10-07 00:30:05 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:15 - INFO - Event created: ID='E201', Name='AI Workshop', Capacity=30.
+2026-10-07 00:30:15 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:15] "[32mPOST /add-event HTTP/1.1[0m" 302 -
+2026-10-07 00:30:15 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:15] "GET / HTTP/1.1" 200 -
+2026-10-07 00:30:15 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:21 - INFO - Registered: 'P001' (Abhay Mishra) to Event 'E001'.
+2026-10-07 00:30:21 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:21] "[32mPOST /register HTTP/1.1[0m" 302 -
+2026-10-07 00:30:21 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:21] "GET /registrations HTTP/1.1" 200 -
+2026-10-07 00:30:21 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:24 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:24] "GET /attendance HTTP/1.1" 200 -
+2026-10-07 00:30:24 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:27 - INFO - Attendance CSV exported: C:\Users\acer\OneDrive\Campus event registration\data\attendance.csv
+2026-10-07 00:30:27 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:27] "POST /export-csv HTTP/1.1" 200 -
+2026-10-07 00:30:32 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:32] "GET /summary HTTP/1.1" 200 -
+2026-10-07 00:30:32 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 00:30:41 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:41] "GET / HTTP/1.1" 200 -
+2026-10-07 00:30:41 - INFO - 127.0.0.1 - - [07/Oct/2026 00:30:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:22:27 - INFO - Data loaded successfully.
+2026-10-07 09:22:27 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-07 09:22:27 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-07 09:22:58 - INFO - 127.0.0.1 - - [07/Oct/2026 09:22:58] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 09:22:58 - INFO - 127.0.0.1 - - [07/Oct/2026 09:22:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:22:58 - INFO - 127.0.0.1 - - [07/Oct/2026 09:22:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-07 09:23:02 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:02] "GET / HTTP/1.1" 200 -
+2026-10-07 09:23:02 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:23:10 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:10] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 09:23:10 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:23:42 - INFO - Event created: ID='e005', Name='masoom sharma event jaunpur leagure', Capacity=10000.
+2026-10-07 09:23:42 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:42] "[32mPOST /add-event HTTP/1.1[0m" 302 -
+2026-10-07 09:23:42 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:42] "GET / HTTP/1.1" 200 -
+2026-10-07 09:23:42 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:23:59 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:59] "GET / HTTP/1.1" 200 -
+2026-10-07 09:23:59 - INFO - 127.0.0.1 - - [07/Oct/2026 09:23:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:24:00 - INFO - 127.0.0.1 - - [07/Oct/2026 09:24:00] "GET /register HTTP/1.1" 200 -
+2026-10-07 09:24:00 - INFO - 127.0.0.1 - - [07/Oct/2026 09:24:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:24:57 - INFO - 127.0.0.1 - - [07/Oct/2026 09:24:57] "GET /registrations HTTP/1.1" 200 -
+2026-10-07 09:24:57 - INFO - 127.0.0.1 - - [07/Oct/2026 09:24:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:25:02 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:02] "GET /attendance HTTP/1.1" 200 -
+2026-10-07 09:25:02 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:25:05 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:05] "GET /summary HTTP/1.1" 200 -
+2026-10-07 09:25:05 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:25:09 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:09] "GET /logs HTTP/1.1" 200 -
+2026-10-07 09:25:09 - INFO - 127.0.0.1 - - [07/Oct/2026 09:25:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:26:05 - INFO - 127.0.0.1 - - [07/Oct/2026 09:26:05] "GET / HTTP/1.1" 200 -
+2026-10-07 09:26:05 - INFO - 127.0.0.1 - - [07/Oct/2026 09:26:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 09:26:05 - INFO - 127.0.0.1 - - [07/Oct/2026 09:26:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-07 11:24:52 - INFO - 127.0.0.1 - - [07/Oct/2026 11:24:52] "GET /add-event HTTP/1.1" 200 -
+2026-10-07 11:24:52 - INFO - 127.0.0.1 - - [07/Oct/2026 11:24:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 11:25:51 - INFO - 127.0.0.1 - - [07/Oct/2026 11:25:51] "GET /register HTTP/1.1" 200 -
+2026-10-07 11:25:51 - INFO - 127.0.0.1 - - [07/Oct/2026 11:25:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-07 11:25:53 - INFO - 127.0.0.1 - - [07/Oct/2026 11:25:53] "GET /logs HTTP/1.1" 200 -
+2026-10-07 11:25:53 - INFO - 127.0.0.1 - - [07/Oct/2026 11:25:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:03:42 - INFO - Data loaded successfully.
+2026-10-08 14:03:42 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-08 14:03:42 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-08 14:03:51 - INFO - Data loaded successfully.
+2026-10-08 14:03:51 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-08 14:03:51 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-08 14:03:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:03:54] "GET / HTTP/1.1" 200 -
+2026-10-08 14:03:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:03:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:03:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:03:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-08 14:04:13 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:13] "GET / HTTP/1.1" 200 -
+2026-10-08 14:04:13 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:04:23 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:23] "GET /add-event HTTP/1.1" 200 -
+2026-10-08 14:04:23 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:04:50 - WARNING - Event creation failed: Duplicate Event ID 'e001'.
+2026-10-08 14:04:50 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:50] "POST /add-event HTTP/1.1" 200 -
+2026-10-08 14:04:50 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:04:58 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:58] "GET / HTTP/1.1" 200 -
+2026-10-08 14:04:58 - INFO - 127.0.0.1 - - [08/Oct/2026 14:04:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:05:49 - INFO - 127.0.0.1 - - [08/Oct/2026 14:05:49] "GET /add-event HTTP/1.1" 200 -
+2026-10-08 14:05:49 - INFO - 127.0.0.1 - - [08/Oct/2026 14:05:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:05:50 - INFO - 127.0.0.1 - - [08/Oct/2026 14:05:50] "GET /register HTTP/1.1" 200 -
+2026-10-08 14:05:50 - INFO - 127.0.0.1 - - [08/Oct/2026 14:05:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:06:06 - INFO - 127.0.0.1 - - [08/Oct/2026 14:06:06] "GET / HTTP/1.1" 200 -
+2026-10-08 14:06:06 - INFO - 127.0.0.1 - - [08/Oct/2026 14:06:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:18] "GET / HTTP/1.1" 200 -
+2026-10-08 14:24:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:27 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:27] "GET /add-event HTTP/1.1" 200 -
+2026-10-08 14:24:27 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:29 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:29] "GET /register HTTP/1.1" 200 -
+2026-10-08 14:24:29 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:30 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:30] "GET /registrations HTTP/1.1" 200 -
+2026-10-08 14:24:30 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:31 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:31] "GET /attendance HTTP/1.1" 200 -
+2026-10-08 14:24:31 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:33 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:33] "GET /summary HTTP/1.1" 200 -
+2026-10-08 14:24:33 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:34 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:34] "GET /logs HTTP/1.1" 200 -
+2026-10-08 14:24:34 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:24:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:35] "GET /summary HTTP/1.1" 200 -
+2026-10-08 14:24:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:24:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:34:36 - INFO - 127.0.0.1 - - [08/Oct/2026 14:34:36] "GET / HTTP/1.1" 200 -
+2026-10-08 14:34:36 - INFO - 127.0.0.1 - - [08/Oct/2026 14:34:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:34:36 - INFO - 127.0.0.1 - - [08/Oct/2026 14:34:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-08 14:34:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:34:54] "GET / HTTP/1.1" 200 -
+2026-10-08 14:34:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:34:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:13 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:13] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:13 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:18 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:35] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:35] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:35 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:35:46 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:46] "GET / HTTP/1.1" 200 -
+2026-10-08 14:35:46 - INFO - 127.0.0.1 - - [08/Oct/2026 14:35:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:36:10 - INFO - 127.0.0.1 - - [08/Oct/2026 14:36:10] "GET / HTTP/1.1" 200 -
+2026-10-08 14:36:10 - INFO - 127.0.0.1 - - [08/Oct/2026 14:36:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:36:19 - INFO - 127.0.0.1 - - [08/Oct/2026 14:36:19] "GET / HTTP/1.1" 200 -
+2026-10-08 14:36:19 - INFO - 127.0.0.1 - - [08/Oct/2026 14:36:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:36:53 - INFO - 127.0.0.1 - - [08/Oct/2026 14:36:53] "[33mGET /api/data HTTP/1.1[0m" 404 -
+2026-10-08 14:38:47 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:47] "GET / HTTP/1.1" 200 -
+2026-10-08 14:38:47 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:38:53 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:53] "GET / HTTP/1.1" 200 -
+2026-10-08 14:38:53 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "GET / HTTP/1.1" 200 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "GET / HTTP/1.1" 200 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "GET / HTTP/1.1" 200 -
+2026-10-08 14:38:54 - INFO - 127.0.0.1 - - [08/Oct/2026 14:38:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-08 14:44:04 - INFO - 127.0.0.1 - - [08/Oct/2026 14:44:04] "[33mGET /api/data HTTP/1.1[0m" 404 -
+2026-10-08 14:46:02 - INFO - 127.0.0.1 - - [08/Oct/2026 14:46:02] "[33mGET /api/data HTTP/1.1[0m" 404 -
+2026-10-08 14:47:01 - INFO - 127.0.0.1 - - [08/Oct/2026 14:47:01] "GET / HTTP/1.1" 200 -
+2026-10-10 19:14:03 - INFO - Data loaded successfully.
+2026-10-10 19:14:03 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-10 19:14:03 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-10 19:14:31 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:31] "GET / HTTP/1.1" 200 -
+2026-10-10 19:14:32 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:32] "GET /static/style.css HTTP/1.1" 200 -
+2026-10-10 19:14:32 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-10 19:14:48 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:48] "GET / HTTP/1.1" 200 -
+2026-10-10 19:14:49 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:49] "GET /static/style.css HTTP/1.1" 200 -
+2026-10-10 19:14:49 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-10-10 19:14:52 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:52] "GET /register HTTP/1.1" 200 -
+2026-10-10 19:14:52 - INFO - 127.0.0.1 - - [10/Oct/2026 19:14:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:06 - WARNING - Registration failed: Empty input field(s).
+2026-10-10 19:15:06 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:06] "POST /register HTTP/1.1" 200 -
+2026-10-10 19:15:06 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:18 - WARNING - Registration failed: Invalid participant ID 'E001'.
+2026-10-10 19:15:18 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:18] "POST /register HTTP/1.1" 200 -
+2026-10-10 19:15:18 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:21 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:21] "GET / HTTP/1.1" 200 -
+2026-10-10 19:15:21 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:23 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:23] "GET /summary HTTP/1.1" 200 -
+2026-10-10 19:15:23 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:25 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:25] "GET / HTTP/1.1" 200 -
+2026-10-10 19:15:25 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:28 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:28] "GET /add-event HTTP/1.1" 200 -
+2026-10-10 19:15:28 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:29 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:29] "GET /register HTTP/1.1" 200 -
+2026-10-10 19:15:29 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:30 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:30] "GET /registrations HTTP/1.1" 200 -
+2026-10-10 19:15:30 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:31 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:31] "GET /attendance HTTP/1.1" 200 -
+2026-10-10 19:15:31 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:32 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:32] "GET /summary HTTP/1.1" 200 -
+2026-10-10 19:15:32 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:34 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:34] "GET /attendance HTTP/1.1" 200 -
+2026-10-10 19:15:34 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:35 - INFO - Attendance CSV exported: C:\Users\acer\OneDrive\all exercises of workshop\exercise 1.1\data\attendance.csv
+2026-10-10 19:15:35 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:35] "POST /export-csv HTTP/1.1" 200 -
+2026-10-10 19:15:38 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:38] "GET /summary HTTP/1.1" 200 -
+2026-10-10 19:15:38 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-10-10 19:15:40 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:40] "GET /logs HTTP/1.1" 200 -
+2026-10-10 19:15:40 - INFO - 127.0.0.1 - - [10/Oct/2026 19:15:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Application Logs — Campus Event Registration{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>Application Logs</h1>
+  <p class="page-subtitle">Recent system log entries (last 50, newest first)</p>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h2>Log Entries</h2>
+    <span class="badge badge-blue">{{ entries | length }} entries</span>
+  </div>
+
+  {% if entries %}
+  <div class="log-container">
+    {% for entry in entries %}
+      {% if 'ERROR' in entry %}
+        <div class="log-line log-error">{{ entry }}</div>
+      {% elif 'WARNING' in entry %}
+        <div class="log-line log-warning">{{ entry }}</div>
+      {% else %}
+        <div class="log-line log-info">{{ entry }}</div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No log entries found.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

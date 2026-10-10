@@ -1,0 +1,32 @@
+{
+    "events": {
+        "E001": {
+            "name": "Cybersecurity workshop",
+            "capacity": 80
+        },
+        "ps001": {
+            "name": "ai and machine learning workshop",
+            "capacity": 60
+        },
+        "e001": {
+            "name": "ai and machine learning workshop",
+            "capacity": 25
+        },
+        "E201": {
+            "name": "AI Workshop",
+            "capacity": 30
+        },
+        "e005": {
+            "name": "masoom sharma event jaunpur leagure",
+            "capacity": 10000
+        }
+    },
+    "registrations": [
+        {
+            "event_id": "E001",
+            "participant_id": "P001",
+            "name": "Abhay Mishra",
+            "email": "mishraabhay391@gmail.com"
+        }
+    ]
+}
